@@ -1,0 +1,15 @@
+{
+  "{{ project_name }}.fasta": "GRCh38.d1.vd1.fa",
+  "{{ project_name }}.replicate_consensus.docker": "registry-vpc.cn-shanghai.aliyuncs.com/pgx-docker-registry/high_confidence_call_manuscript:v1.4",
+  "{{ project_name }}.chromo_file": "{{ chromo_file }}",
+  "{{ project_name }}.filtered_benchmark.docker": "registry-vpc.cn-shanghai.aliyuncs.com/pgx-docker-registry/high_confidence_call_manuscript:v1.4",
+  "{{ project_name }}.mendelian.docker": "registry-vpc.cn-shanghai.aliyuncs.com/pgx-docker-registry/vbt:v1.1",
+  "{{ project_name }}.disk_size": "150",
+  "{{ project_name }}.LCL5_benchmark_call": "oss://pgx-result/renluyao/manuscript/benchmark_calls_v3.0/LCL5.afterfilterdiffbed.vcf.gz",
+  "{{ project_name }}.merge_mendelian.docker": "registry-vpc.cn-shanghai.aliyuncs.com/pgx-docker-registry/high_confidence_call_manuscript:v1.4",
+  "{{ project_name }}.chromo": "{{ chromo }}",
+  "{{ project_name }}.LCL5_info_dir": "oss://pgx-result/renluyao/manuscript/20200320_high_confidence_call_intergration/vcf_info/",
+  "{{ project_name }}.cluster_config": "OnDemand bcs.b4.xlarge img-ubuntu-vpc",
+  "{{ project_name }}.ref_dir": "oss://chinese-quartet/quartet-storage-data/reference_data/"
+}
+
