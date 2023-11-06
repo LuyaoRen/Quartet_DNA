@@ -1,0 +1,10 @@
+{
+  "{{ project_name }}.disk_size": "150",
+  "{{ project_name }}.inputSamplesFile": "{{ inputSamplesFile }}",
+  "{{ project_name }}.bedVote.docker": "registry-vpc.cn-shanghai.aliyuncs.com/pgx-docker-registry/high_confidence_call_manuscript:v1.1",
+  "{{ project_name }}.cluster_config": "OnDemand bcs.a2.large img-ubuntu-vpc",
+  "{{ project_name }}.mergeBed.docker": "registry-internal.cn-shanghai.aliyuncs.com/pgx-docker-registry/bedtools:v2.27.1",
+  "{{ project_name }}.CallableLoci.docker": "registry-vpc.cn-shanghai.aliyuncs.com/pgx-docker-registry/gatk:3.8-1",
+  "{{ project_name }}.quartet_sample": "{{ quartet_sample }}"
+}
+

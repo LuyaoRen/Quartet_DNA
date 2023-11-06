@@ -1,0 +1,10 @@
+{
+  "{{ project_name }}.fasta": "GRCh38.d1.vd1.fa",
+  "{{ project_name }}.disk_size": "400",
+  "{{ project_name }}.docker": "registry-vpc.cn-shanghai.aliyuncs.com/pgx-docker-registry/gatk:3.8-1",
+  "{{ project_name }}.bam_index": "{{ bam_index }}",
+  "{{ project_name }}.cluster_config": "OnDemand ecs.sn1ne.4xlarge img-ubuntu-vpc",
+  "{{ project_name }}.bam": "{{ bam }}",
+  "{{ project_name }}.sample": "{{ sample }}",
+  "{{ project_name }}.ref_dir": "oss://chinese-quartet/quartet-storage-data/reference_data/"
+}
