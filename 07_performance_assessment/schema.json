@@ -1,0 +1,307 @@
+{
+  "formMode": "batch",
+  "fields": [
+    {
+      "tmplType": "sample_id",
+      "type": "number",
+      "label": "Sample ID",
+      "name": "sample_id",
+      "question": "How many samples? For auto generating sample id.",
+      "placeholder": "How many samples? For auto generating sample id.",
+      "model": "sample_id",
+      "disabled": false,
+      "min": 1,
+      "max": 100,
+      "config": {
+        "initialValue": 1,
+        "rules": [
+          {
+            "type": "number",
+            "required": true,
+            "message": "Please input a number."
+          }
+        ]
+      }
+    },
+    {
+      "tmplType": "radio",
+      "label": "FASTQ/VCF File?",
+      "model": "fastq_or_vcf",
+      "options": [
+        {
+          "label": "FASTQ",
+          "value": "fastq"
+        },
+        {
+          "label": "VCF",
+          "value": "vcf"
+        }
+      ],
+      "config": {
+        "rules": [
+          {
+            "type": "string",
+            "required": true,
+            "message": "Please select a file type."
+          }
+        ]
+      }
+    },
+    {
+      "tmplType": "file",
+      "label": "D5 VCF Files",
+      "model": "vcf_D5",
+      "readOnly": false,
+      "multiple": true,
+      "visibleVariable": "fastq_or_vcf",
+      "expectedValue": "vcf",
+      "filterType": "vcf",
+      "placeholder": "Select files for D5 vcf.",
+      "config": {
+        "rules": [
+          {
+            "type": "array",
+            "required": true,
+            "message": "Please select files for D5 vcf."
+          }
+        ]
+      }
+    },
+    {
+      "tmplType": "file",
+      "label": "D5 Read1 Files",
+      "model": "fastq_1_D5",
+      "readOnly": false,
+      "multiple": true,
+      "visibleVariable": "fastq_or_vcf",
+      "expectedValue": "fastq",
+      "filterType": "fastq|fastq.gz|fq|fq.gz",
+      "placeholder": "Select files for D5 read1.",
+      "config": {
+        "rules": [
+          {
+            "type": "array",
+            "required": true,
+            "message": "Please select files for D5 read1."
+          }
+        ]
+      }
+    },
+    {
+      "tmplType": "file",
+      "label": "D5 Read2 Files",
+      "model": "fastq_2_D5",
+      "readOnly": false,
+      "multiple": true,
+      "visibleVariable": "fastq_or_vcf",
+      "expectedValue": "fastq",
+      "filterType": "fastq|fastq.gz|fq|fq.gz",
+      "placeholder": "Select files for D5 read2.",
+      "config": {
+        "rules": [
+          {
+            "type": "array",
+            "required": true,
+            "message": "Please select files for D5 read2."
+          }
+        ]
+      }
+    },
+    {
+      "tmplType": "file",
+      "label": "D6 VCF Files",
+      "model": "vcf_D6",
+      "readOnly": false,
+      "multiple": true,
+      "visibleVariable": "fastq_or_vcf",
+      "expectedValue": "vcf",
+      "filterType": "vcf",
+      "placeholder": "Select files for D6 vcf.",
+      "config": {
+        "rules": [
+          {
+            "type": "array",
+            "required": true,
+            "message": "Please select files for D6 vcf."
+          }
+        ]
+      }
+    },
+    {
+      "tmplType": "file",
+      "label": "D6 Read1 Files",
+      "model": "fastq_1_D6",
+      "readOnly": false,
+      "multiple": true,
+      "visibleVariable": "fastq_or_vcf",
+      "expectedValue": "fastq",
+      "filterType": "fastq|fastq.gz|fq|fq.gz",
+      "placeholder": "Select files for D6 read1.",
+      "config": {
+        "rules": [
+          {
+            "type": "array",
+            "required": true,
+            "message": "Please select files for D6 read1."
+          }
+        ]
+      }
+    },
+    {
+      "tmplType": "file",
+      "label": "D6 Read2 Files",
+      "model": "fastq_2_D6",
+      "readOnly": false,
+      "multiple": true,
+      "visibleVariable": "fastq_or_vcf",
+      "expectedValue": "fastq",
+      "filterType": "fastq|fastq.gz|fq|fq.gz",
+      "placeholder": "Select files for D6 read2.",
+      "config": {
+        "rules": [
+          {
+            "type": "array",
+            "required": true,
+            "message": "Please select files for D6 read2."
+          }
+        ]
+      }
+    },
+    {
+      "tmplType": "file",
+      "label": "F7 VCF Files",
+      "model": "vcf_F7",
+      "readOnly": false,
+      "multiple": true,
+      "visibleVariable": "fastq_or_vcf",
+      "expectedValue": "vcf",
+      "filterType": "vcf",
+      "placeholder": "Select files for F7 vcf.",
+      "config": {
+        "rules": [
+          {
+            "type": "array",
+            "required": true,
+            "message": "Please select files for F7 vcf."
+          }
+        ]
+      }
+    },
+    {
+      "tmplType": "file",
+      "label": "F7 Read1 Files",
+      "model": "fastq_1_F7",
+      "readOnly": false,
+      "multiple": true,
+      "visibleVariable": "fastq_or_vcf",
+      "expectedValue": "fastq",
+      "filterType": "fastq|fastq.gz|fq|fq.gz",
+      "placeholder": "Select files for F7 read1.",
+      "config": {
+        "rules": [
+          {
+            "type": "array",
+            "required": true,
+            "message": "Please select files for F7 read1."
+          }
+        ]
+      }
+    },
+    {
+      "tmplType": "file",
+      "label": "F7 Read2 Files",
+      "model": "fastq_2_F7",
+      "readOnly": false,
+      "multiple": true,
+      "visibleVariable": "fastq_or_vcf",
+      "expectedValue": "fastq",
+      "filterType": "fastq|fastq.gz|fq|fq.gz",
+      "placeholder": "Select files for F7 read2.",
+      "config": {
+        "rules": [
+          {
+            "type": "array",
+            "required": true,
+            "message": "Please select files for F7 read2."
+          }
+        ]
+      }
+    },
+    {
+      "tmplType": "file",
+      "label": "M8 VCF Files",
+      "model": "vcf_M8",
+      "readOnly": false,
+      "multiple": true,
+      "visibleVariable": "fastq_or_vcf",
+      "expectedValue": "vcf",
+      "filterType": "vcf",
+      "placeholder": "Select files for M8 vcf.",
+      "config": {
+        "rules": [
+          {
+            "type": "array",
+            "required": true,
+            "message": "Please select files for M8 vcf."
+          }
+        ]
+      }
+    },
+    {
+      "tmplType": "file",
+      "label": "M8 Read1 Files",
+      "model": "fastq_1_M8",
+      "readOnly": false,
+      "multiple": true,
+      "visibleVariable": "fastq_or_vcf",
+      "expectedValue": "fastq",
+      "filterType": "fastq|fastq.gz|fq|fq.gz",
+      "placeholder": "Select files for M8 read1.",
+      "config": {
+        "rules": [
+          {
+            "type": "array",
+            "required": true,
+            "message": "Please select files for M8 read1."
+          }
+        ]
+      }
+    },
+    {
+      "tmplType": "file",
+      "label": "M8 Read2 Files",
+      "model": "fastq_2_M8",
+      "readOnly": false,
+      "multiple": true,
+      "visibleVariable": "fastq_or_vcf",
+      "expectedValue": "fastq",
+      "filterType": "fastq|fastq.gz|fq|fq.gz",
+      "placeholder": "Select files for M8 read2.",
+      "config": {
+        "rules": [
+          {
+            "type": "array",
+            "required": true,
+            "message": "Please select files for M8 read2."
+          }
+        ]
+      }
+    },
+    {
+      "tmplType": "actions",
+      "buttons": [
+        {
+          "type": "cancel",
+          "buttonType": "default",
+          "buttonLabel": "Previous Step"
+        },
+        {
+          "type": "submit",
+          "buttonType": "primary",
+          "buttonLabel": "Next Step",
+          "validate": true
+        }
+      ]
+    }
+  ]
+}

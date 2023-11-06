@@ -1,0 +1,21 @@
+{
+  "name": "WGS QC for Quartet",
+  "short_name": "quartet_dna_quality_control_wgs_big_pipeline",
+  "description": "Quality control of germline variants calling results using a Chinese Quartet family",
+  "home": "http://apps.clinico-omics.org/renluyao/quartet_dna_quality_control_wgs_big_pipeline",
+  "hidden": false,
+  "icons": [
+    {
+      "src": "",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "category": "Pipeline",
+  "source": "PGx"
+}
