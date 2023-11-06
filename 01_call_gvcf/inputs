@@ -1,0 +1,13 @@
+{
+  "{{ project_name }}.SENTIEON_INSTALL_DIR": "/opt/sentieon-genomics",
+  "{{ project_name }}.fasta": "GRCh38.d1.vd1.fa",
+  "{{ project_name }}.dbsnp_dir": "oss://pgx-reference-data/GRCh38.d1.vd1/",
+  "{{ project_name }}.disk_size": "500",
+  "{{ project_name }}.inputSamplesFile": "{{ inputSamplesFile }}",
+  "{{ project_name }}.docker": "registry.cn-shanghai.aliyuncs.com/pgx-docker-registry/sentieon-genomics:v2018.08.01",
+  "{{ project_name }}.dbmills_dir": "oss://pgx-reference-data/GRCh38.d1.vd1/",
+  "{{ project_name }}.cluster_config": "OnDemand bcs.a2.7xlarge img-ubuntu-vpc",
+  "{{ project_name }}.db_mills": "Mills_and_1000G_gold_standard.indels.hg38.vcf",
+  "{{ project_name }}.dbsnp": "dbsnp_146.hg38.vcf",
+  "{{ project_name }}.ref_dir": "oss://pgx-reference-data/GRCh38.d1.vd1/"
+}
